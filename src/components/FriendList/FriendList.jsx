@@ -1,14 +1,14 @@
 import css from "./FriendList.module.css";
 import FriendListItem from "../FriendListItem/FriendListItem";
 
-
 export default function FriendList({ friends }) {
     return (
-        <ul>
-            {/* Кількість li залежить від кількості об'єктів в масиві */}
-            <li>
-                <FriendListItem />
-            </li>
+        <ul className={css.friendList}>
+            {friends.map((friend) => (
+                <li key={friend.id}>
+                    <FriendListItem friend={friend} />
+                </li>
+            ))}
         </ul>
-    )
-}
+    );
+};

@@ -12,7 +12,7 @@ export default function Profile({ name, tag, location, image, stats }) {
                 <p className={css.tagText}>@{tag}</p>
                 <p className={css.tagText}>{location}</p>
           </div>
-          <ul className="statsList">
+          <ul className={css.statsList}>
             <li className={css.statsItem}>
               <span className={css.stats}>Followers</span>
               <span className={css.statsValue}>{stats.followers}</span>

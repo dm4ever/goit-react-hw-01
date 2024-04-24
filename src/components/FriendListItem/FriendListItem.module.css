@@ -1,12 +1,18 @@
 .friendListItem {
-    width: 100px;
-    height: 150px;
+    width: 130px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     border-color: aliceblue;
     border: 3px solid aliceblue;
     border-radius: 10px;
+    background-color: #242424;
+}
+
+.avatarItem {
+    margin-bottom: 10px;
 }
 
 .nameItem {
@@ -14,14 +20,12 @@
     color: #ffffff;
 }
 
-.statusItem {
+.statusItemOnline {
+    color: rgb(3, 166, 3);
     font-size: 24px;
 }
 
-.statusItem.online {
-    color: green;
-}
-
-.statusItem.offline {
+.statusItemOffline {
     color: red;
+    font-size: 24px;
 }
